@@ -1,0 +1,12 @@
+services:
+    osgrid:
+        image: osgrid-docker
+        container_name: osgrid-region
+        restart: always
+        ports:
+            - 9000:9000
+            - 9000:9000/udp
+        volumes:
+            - ./data:/osgrid/data
+            - ./Regions.ini:/osgrid/bin/Regions/Regions.ini
+            - ./Estates.ini:/osgrid/bin/Estates/Estates.ini
