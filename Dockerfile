@@ -4,8 +4,8 @@ RUN apt-get install -y wget unzip
 RUN mkdir /osgrid
 RUN mkdir /osgrid/data
 WORKDIR /osgrid
-RUN wget "https://danbanner.onikenkon.com/osgrid/osgrid-opensim-11232021.v0.9.2.52cd923.zip"
-RUN unzip osgrid-opensim-11232021.v0.9.2.52cd923.zip
+RUN wget "https://danbanner.onikenkon.com/osgrid/osgrid-opensim-03232023.v0.9.2.d1466eb.zip"
+RUN unzip osgrid-opensim-03232023.v0.9.2.d1466eb.zip
 RUN rm bin/OpenSim.ini
 
 COPY OpenSim.ini /osgrid/bin/OpenSim.ini
